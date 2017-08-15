@@ -2,6 +2,8 @@
 title: "Testando o Método Create de um Controller com Nested Attributes"
 layout: post
 date: 2016-10-19 12:46:00
+image: /assets/images/post1.jpg
+headerImage: true
 tag:
   - rspec
   - test
