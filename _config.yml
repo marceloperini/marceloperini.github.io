@@ -1,6 +1,6 @@
 # main text of home
 name: Marcelo Perini Veloso
-bio:
+bio: Sai que o controle 1 é meu!
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -34,7 +34,7 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: marceloperini
+facebook: marceloperiniveloso
 twitter: sid_marcelo
 # google: mygoogle
 # instagram: myinstagram
@@ -55,7 +55,7 @@ email: marcelo.perini.veloso@gmail.com
 authors:
   marcelo:
     name: Marcelo P. Veloso
-    bio:
+    bio: Sai que o controle 1 é meu!
     external-image: false
     picture: assets/images/profile.jpg
     twitter: sid_marcelo
