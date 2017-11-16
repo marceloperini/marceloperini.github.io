@@ -4,8 +4,6 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-
-
 <h2>Skills</h2>
 
 <ul class="skill-list">
@@ -29,6 +27,5 @@ layout: page
 
 <ul>
   <li><a href="https://github.com/marceloperini/sigep_web">Sigep Web</a></li>
-  <li><a href="https://github.com/WhiteSentinel/sentinel-ruby-agent">Sentinel Ruby Agent</a></li>
   <li><a href="https://github.com/marceloperini/webmaniabr_nfe_ruby">Webmania Nfe Ruby</a></li>
 </ul>
