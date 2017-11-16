@@ -19,7 +19,7 @@ layout: page
   <li>Python</li>
   <li>PostgreSQL - Oracle - MySQL - MongoDB - Redis</li>
   <li>Scrum and Kanban</li>
-  <li>TDD e Continuous Integration</li>
+  <li>TDD, BDD and Continuous Integration</li>
   <li>DevOps</li>
 </ul>
 
