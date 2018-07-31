@@ -1,9 +1,12 @@
+# frozen_string_literal: true
+
 require 'html/proofer'
 
 # rake test
-desc "build and test website"
+desc 'build and test website'
 
 task :test do
-  sh "bundle exec jekyll build"
-  HTML::Proofer.new("_site", {:href_ignore=> ['http://localhost:4000'], :verbose => true}).run
+  sh 'bundle exec jekyll build'
+  HTML::Proofer.new('_site', href_ignore: ['http://localhost:4000'],
+                             verbose: true).run
 end

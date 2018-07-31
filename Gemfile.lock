@@ -8,6 +8,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
+    ast (2.4.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -83,6 +84,7 @@ GEM
       typhoeus (~> 0.7)
       yell (~> 2.0)
     i18n (0.8.6)
+    jaro_winkler (1.5.1)
     jekyll (3.5.1)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -192,13 +194,26 @@ GEM
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     parallel (1.12.0)
+    parser (2.5.1.2)
+      ast (~> 2.4.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
+    powerpack (0.1.2)
     public_suffix (2.0.5)
+    rainbow (3.0.0)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rouge (1.11.1)
+    rubocop (0.58.2)
+      jaro_winkler (~> 1.5.1)
+      parallel (~> 1.10)
+      parser (>= 2.5, != 2.5.1.1)
+      powerpack (~> 0.1)
+      rainbow (>= 2.2.2, < 4.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (~> 1.0, >= 1.0.1)
+    ruby-progressbar (1.9.0)
     safe_yaml (1.0.4)
     sass (3.5.1)
       sass-listen (~> 4.0.0)
@@ -224,6 +239,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   html-proofer
+  rubocop
 
 BUNDLED WITH
-   1.15.3
+   1.16.1
