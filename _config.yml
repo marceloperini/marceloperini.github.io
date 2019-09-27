@@ -31,13 +31,13 @@ analytics-google: 'UA-104613940-1'
 # if you don't want comments in your posts, leave categories empty
 disqus:
   shortname: marceloperini-com-br # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+  categories: [blog] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
 # facebook: marceloperiniveloso
 twitter: sid_marcelo
 # google: mygoogle
-instagram: marcelo_perini
+# instagram: marcelo_perini
 # pinterest: mypinterest
 linkedin: marcelo-perini-veloso-43696061
 # youtube: myyoutube
