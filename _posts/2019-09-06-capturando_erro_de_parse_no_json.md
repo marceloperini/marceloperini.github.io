@@ -2,7 +2,7 @@
 title: "Capturando erro de parse com JSON inválido"
 layout: post
 date: 2019-09-06 22:00:00
-image: /assets/images/post1.jpg
+image: /assets/images/post2.jpg
 headerImage: true
 tag:
   - rails
@@ -39,22 +39,23 @@ Contents:
 
 Esse erro é disparado [nesta linha](https://github.com/rails/rails/blob/98a57aa5f610bc66af31af409c72173cdeeb3c9e/actionpack/lib/action_dispatch/http/parameters.rb#L114)
 e ocorre todas as vezes em que não é possível realizar o *parse* do conteúdo enviado por uma requisição.
-O problema é que a requisição nem chega a acessar a *action* do *controller* já que erro
-`ActionDispatch::Http::Parameters::ParseError` é disparado no ***Action Dispatch*** do ***Rails***.
+O problema é que a requisição nem chega a acessar a *action* do *controller* já que o erro
+***ActionDispatch::Http::Parameters::ParseError*** é disparado no ***Action Dispatch*** do ***Rails***.
 
 ## Solução
 
-A ideia por trás da solução é criar um novo middleware para capturar o erro
-e retornar uma resposta para o usuário.
+A ideia por trás da solução é criar um middleware para capturar o erro e
+retornar uma resposta para o usuário.
 
-Um middleware necessita de dois métodos, o método ***initialize*** e ***call***. Os middlewares
-são executados da seguinte forma na aplicação: É instanciado passando a própria aplicação
-e em seguida é chamado o método ***call*** da aplicação, que realizará o mesmo procedimento
-no próximo middleware.
+Um middleware necessita de dois métodos, ***initialize*** e ***call***. Os middlewares
+são executados todas as vezes que uma requisição é recebida pela aplicação
+da seguinte forma: Primeiro o middleware é instanciado com a própria aplicação
+e em seguida é chamado o método ***call***, que por final chamará o middleware seguinte.
 
-Nosso middleware não precisa que seja processado nada, então só precisamos
-chamar o método ***call*** da aplicação passada na inicialização. Para capturar o erro
-chamado no parse do JSON basta utilizar rescue e a classe
+Nosso middleware só precisa executar o método ***call*** e capturar o erro
+disparado ao tentar realizar o parse do JSON com erro.
+
+Criaremos nossa classe do midleware em `app/middleware/catch_json_parse_errors.rb`:
 
 ``` ruby
 # app/middleware/catch_json_parse_errors.rb
@@ -87,6 +88,9 @@ class CatchJsonParseErrors
   end
 end
 ```
+
+Para que nossa classe seja adicionada na inicialzação da aplicação devemos adicionar
+a seguinte linha em `config/application.rb`:
 
 ``` ruby
 # config/application.rb
