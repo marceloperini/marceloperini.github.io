@@ -2,30 +2,43 @@
 title: About
 layout: page
 ---
+
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<h2>Skills</h2>
+## Skills
 
-<ul class="skill-list">
-  <li>HTML - Erb</li>
-  <li>Responsive (Mobile First)</li>
-  <li>CSS (Stylus, Sass, Less)</li>
-  <li>Css Frameworks (Bootstrap)</li>
-  <li>Javascript</li>
-  <li>NodeJS</li>
-  <li>AngularJS</li>
-  <li>Git</li>
-  <li>PHP</li>
-  <li>Python</li>
-  <li>PostgreSQL - Oracle - MySQL - MongoDB - Redis</li>
-  <li>Scrum and Kanban</li>
-  <li>TDD, BDD and Continuous Integration</li>
-  <li>DevOps</li>
-</ul>
+* HTML
+* CSS (Stylus, Sass, Less)
+* Javascript
+* React
+* NodeJS
+* Git
+* PHP
+* Python
+* Ruby
+* Rails
+* PostgreSQL
+* Oracle
+* MySQL
+* MongoDB
+* Redis
 
-<h2>Projects</h2>
+## Personal Projects
 
 <ul>
-  <li><a href="https://github.com/marceloperini/sigep_web">Sigep Web</a></li>
-  <li><a href="https://github.com/marceloperini/webmaniabr_nfe_ruby">Webmania Nfe Ruby</a></li>
+  <li><a href="https://github.com/marceloperini/sigep_web" target="_blank">Sigep Web</a></li>
+</ul>
+
+## Open Source collaborations
+
+<ul>
+  <li><a href="https://github.com/rails/rails/pulls?q=is%3Apr+author%3Amarceloperini+is%3Aclosed+review%3Anone" target="_blank">Rails</a></li>
+</ul>
+
+<ul>
+  <li><a href="https://github.com/lapig-ufg/mdc/graphs/contributors" target="_blank">MODIS Data Cube</a></li>
+</ul>
+
+<ul>
+  <li><a href="https://github.com/juuh42dias/transervicos/pulls?q=is%3Apr+author%3Amarceloperini+is%3Aclosed" target="_blank">Transervicos</a></li>
 </ul>
