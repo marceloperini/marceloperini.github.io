@@ -1,8 +1,11 @@
 ---
 layout: default
 ---
-{% include header.html %}
 
-{{content}}
+<h1 class="title">
+  <a href="{{ site.url }}">
+    {{ site.name }}
+  </a>
+</h1>
 
-{% include footer.html %}
+{{ content }}

@@ -1,0 +1,29 @@
+<section class="home-links">
+  <div class="item">
+    <a class="url" href="{{ site.url }}/blog">
+      Blog
+    </a>
+  </div>
+
+  {% if site.twitter %}
+    <div class="item">
+      <a class="url" href="https://twitter.com/{{ site.twitter }}" target="_blank">
+        Twitter
+      </a>
+    </div>
+  {% endif %}
+
+  {% if site.github %}
+    <div class="item">
+      <a class="url" href="https://github.com/{{ site.github }}" target="_blank">
+        Github
+      </a>
+    </div>
+  {% endif %}
+
+  <div class="item">
+    <a class="url" href="{{ site.url }}/about">
+      About
+    </a>
+  </div>
+</section>

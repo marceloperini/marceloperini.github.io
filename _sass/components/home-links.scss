@@ -1,0 +1,21 @@
+.home-links {
+  margin-top: 50px;
+
+  .item {
+    //text-align: center;
+    margin: 10px 0;
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.6s;
+
+    &:hover, &:active, &:focus {
+      color: $beta;
+    }
+  }
+}
