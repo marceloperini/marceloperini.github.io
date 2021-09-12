@@ -3,7 +3,7 @@ title: About
 layout: page
 ---
 
-![Profile Image]({{ site.baseurl }}public/profile.jpg)
+![Profile Image](/public/profile.jpg)
 
 ## Skills
 
