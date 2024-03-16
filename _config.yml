@@ -3,7 +3,7 @@ title: Marcelo Perini Veloso
 tagline: Marcelo P. Veloso's blog
 url: http://marceloperini.com.br
 paginate: 3
-baseurl: "/"
+baseurl: ""
 permalink: pretty
 
 # Gems
